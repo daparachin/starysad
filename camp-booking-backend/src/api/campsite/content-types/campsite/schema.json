@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "campsites",
+  "info": {
+    "singularName": "campsite",
+    "pluralName": "campsites",
+    "displayName": "Campsite"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "maxCapacity": {
+      "type": "integer"
+    },
+    "isAvailable": {
+      "type": "boolean"
+    },
+    "pricePernIGHT": {
+      "type": "decimal"
+    },
+    "campsiteId": {
+      "type": "uid"
+    },
+    "campsiteType": {
+      "type": "enumeration",
+      "enum": [
+        "tent",
+        "bungalov",
+        "pitch"
+      ]
+    }
+  }
+}
